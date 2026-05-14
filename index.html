@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>School LMS - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <div class="login-card">
+            <div class="logo">
+                <h1>📚 School LMS</h1>
+                <p>Intelligent Learning Management System</p>
+            </div>
+            <form id="loginForm" method="POST" action="dashboard.php">
+                <div class="input-group">
+                    <label>Username</label>
+                    <input type="text" name="username" id="username" required placeholder="Enter username">
+                </div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" name="password" id="password" required placeholder="Enter password">
+                </div>
+                <button type="submit" class="btn-login">Login →</button>
+                <p class="demo-credentials">Demo: student1 / student123 | admin / admin123</p>
+                <p style="text-align: center; margin-top: 15px; color: #666;">
+                    Don't have an account? <a href="register.php" style="color: #667eea; text-decoration: none; font-weight: 600;">Register here</a>
+                </p>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
